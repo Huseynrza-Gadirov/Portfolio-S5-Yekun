@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+
+
+:root {
+    --services-h6: #FF5E69;
+
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+.intro-h1 {
+    font-size: 68px;
+}
+
+
+
+.overlay-menu{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.8;
+top: 0;
+left: 0;
+z-index: 99999;
+width: 0;
+overflow-x: hidden;
+transition: width .5s ease-in-out;
+}
+
+
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.aktiv{
+    width: 100%;
+}
+
+.fa-xmark {
+    right: 40px;
+    top: 40px;
+    font-size: 40px;
+}
+
+.fa-xmark:hover{
+    cursor: pointer;
+}
+
+
+
+.intro-left-side h1 span {
+    color: #FF8A56;
+}
+
+/** Mobile First */
+
+.book-a-call {
+    width: 151px;
+    height: 58px;
+    display: inline-flex;
+    /** flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #222;
+    color: #fff;
+}
+
+
+/** Specifity */
+
+
+.text-white {
+text-decoration: none;
+color: #222;
+}
+
+.CV {
+    text-decoration: none;
+    color: #222;
+}
+
+/** Services section start */
+
+.services-section h6 {
+    color: var(--services-h6);
+    text-align: center;
+    color: #FF5E69;
+}
+
+.blog {
+    border-bottom: 1px solid #dedede;
+    padding: 30px 0;
+}
+
+#metadata {
+    color: #8a8a8a;
+}
+
+/** Services section end */
+
+
+
+@media(max-width:575px){
+    .parentdiv{
+        max-width: 100%
+    }
+}
+
+@media(min-width:576px){
+    .intro-left-side h1 {
+        font-size: 2.2rem;
+    }
+
+    .logo {
+        width: 200px;
+    }
+}
+
+@media(min-width:768px){
+
+}
+
+@media(min-width:991px){
+    .intro-left-side h1 {
+        font-size: 4.2rem;
+    }
+}
